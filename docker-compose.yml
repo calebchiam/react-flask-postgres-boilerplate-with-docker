@@ -1,4 +1,4 @@
-version: '3.5'
+version: '3.7'
 
 services:
 
@@ -6,7 +6,7 @@ services:
     image: postgres:12.3
     container_name: postgres
     ports:
-      - '5432:5432'
+      - '5433:5433'
     environment:
       - POSTGRES_DB=sport_stats
       - POSTGRES_USER=myuser
@@ -42,4 +42,4 @@ services:
     environment:
       - NODE_ENV=development
       - CHOKIDAR_USEPOLLING=true
-      - HOST_URL=http://192.168.99.100:5000
+      - HOST_URL=http://localhost:5000

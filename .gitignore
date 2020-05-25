@@ -3,3 +3,4 @@ client/node_modules
 backend/venv
 backend/api/__pycache__
 *.iml
+*docker-venv
